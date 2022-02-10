@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrestha Gym</title>
+</head>
+<link rel="Style" href="css/Style.CSS">
+<style>
+    /*CSS Reset*/
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("./Images/background 6.jpg");
+        background-size: cover;
+        /*background-repeat: no-repeat;*/
+        /* width: 200px;
+       /*height: auto;*/
+
+
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /*border: 4px solid greenyellow;*/
+    }
+
+    .left img {
+        width: 150px;
+        filter: invert();
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        margin: 20px auto;
+        font-size: 28px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 50%;
+        /*border: 4px solid greenyellow*/
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /*border: 4px solid greenyellow;*/
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 28px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(199, 74, 74);
+    }
+
+    .btn {
+        margin: 0px, 9px;
+        color: red;
+        background-color: black;
+        font-size: 18px;
+        padding: 4px 14px;
+        border: 3px solid white;
+        /* border-radius: 10px;*/
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .btn:hover {
+        background-color: turquoise;
+    }
+
+    .container {
+        /*border: 5px solid blue;*/
+        margin: 80px 500px;
+        padding: 50px 80px;
+        width: 33%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        border: 3px solid black;
+        margin: 11px auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        /*margin: auto;
+        background-color: black;
+        border: 3px solid white;*/
+    }
+
+    .container h2 {
+        text-align: center;
+        color: yellow;
+        font-size: 40px;
+        /*margin: auto;
+        background-color: black;
+        border: 3px solid white;*/
+
+    }
+
+    .container button {
+        display: block;
+        width: 25%;
+        margin: auto;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+        color: red;
+        border: 3px solid white;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="images/silhouette-g68ede26d0_1280.png">
+            <div>Fitness Studio</div>
+        </div>
+        <!--Middle for Nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Right for Search-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Your Area</h1>
+        <h2>Lets Get Fit Together</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
